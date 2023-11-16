@@ -1,7 +1,7 @@
+const containerDiv = document.querySelector(".container");
 const cardDiv = document.getElementById("cardDiv");
 const loadingDiv = document.getElementById("loading");
 const btn = document.querySelector(".btn");
-const containerDiv = document.querySelector(".container");
 const tarih = document.getElementById("tarih");
 // window.addEventListener("load", () => {
 //     cardDiv.style.display = "none"
@@ -12,7 +12,7 @@ setTimeout(() => {
   loadingDiv.style.display = "none";
 }, 3000);
 //* verileri getir
-let status=0
+let status=0;
 let veri = "";
 const getImage = (() => {
   fetch("https://api.thecatapi.com/v1/images/search?limit=10").then((res) => {
@@ -34,8 +34,8 @@ const getImage = (() => {
     cardDiv.innerHTML=""
     catsShow.forEach((image) => {
         cardDiv.innerHTML += `
-        <div class="col-12 col-sm-6 col-lg-4">
-            <div style="height:200px;">
+        <div class="col-12 col-sm-6  col-md-4 col-lg-3 ">
+            <div style="height:200px;" class="border ">
                 <img src="${image.url}" class="w-100 h-100" alt="...">
             </div>
         </div>
@@ -47,7 +47,7 @@ const getImage = (() => {
 /*                       buttona basınca resim değişsin                       */
 /* -------------------------------------------------------------------------- */
 btn.addEventListener('click', () =>{
-    loadingDiv.style.display="noone"
+    loadingDiv.style.display="none"
     getImage()
     setTimeout(() => {
         cardDiv.innerHTML=`<img src="./img/loading.gif"/>`
@@ -61,7 +61,7 @@ const outputDate=(()=>{
     let currentDate= new Date();
     let datedate = currentDate.toLocaleDateString(); // localden suanki tarih
     let time = currentDate.toLocaleTimeString(); // localden suanki saat
-    let currentDateTimeString=datedate + "," + time
+    let currentDateTimeString=datedate + "<=>" + time
     tarih.textContent = currentDateTimeString
 })
 setInterval(outputDate, 1000)
