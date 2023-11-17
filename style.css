@@ -1,38 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.btn{padding: .6rem;
-    background-color: red;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-     font-size: 1.2rem;
-     border-radius: 5px;
-     border: none;
-     cursor: pointer;
-
-}
-
-#cardDiv{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-#date{
-    margin-top: 2rem;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 3rem;
-    font-size: 1.3rem;
-}
+body {
+    background: url("https://64.media.tumblr.com/bca576d1378e7dec93b38ad879c7edfd/tumblr_oiwytrO1RF1tf8vylo1_1280.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
