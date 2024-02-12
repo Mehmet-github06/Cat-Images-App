@@ -10,7 +10,7 @@ This web application fetches random cat images using [The Cat API](https://theca
 
 ## Screenshot
 
-![Application Screenshot](screenshot.png)
+![Application Screenshot](./img/Screenshot_2.jpg)
 
 ## Live Link
 
